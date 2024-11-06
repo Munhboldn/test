@@ -122,20 +122,13 @@ verb_dict = {
     "write": {"past": "wrote", "participle": "written"}
 }
 
-# Function to encode the image to base64
-def image_to_base64(image_path):
-    with open(image_path, "rb") as image_file:
-        encoded_image = base64.b64encode(image_file.read()).decode()
-    return encoded_image
-
-# Function to set a background image using base64 encoding
-def add_bg_from_base64(image_path):
-    encoded_image = image_to_base64(image_path)
+# Function to set a background image from a URL
+def add_bg_from_url(image_url):
     st.markdown(
         f"""
         <style>
         .stApp {{
-            background-image: url('data:image/jpeg;base64,{encoded_image}');
+            background-image: url("{image_url}");
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -145,12 +138,11 @@ def add_bg_from_base64(image_path):
         unsafe_allow_html=True
     )
 
-# Set the local image path
-image_path = "E:\inter python\Project 1\dark academia.jpg"
+# URL of the image
+image_url = "https://github.com/Munhboldn/test/blob/main/dark%20academia.jpg?raw=true"  # Use ?raw=true for raw image
 
-# Set the background using the local image
-add_bg_from_base64(image_path)
-
+# Set the background using the URL
+add_bg_from_url(image_url)
 
 
 # Function to search verb forms with fuzzy matching
