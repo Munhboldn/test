@@ -97,7 +97,6 @@ verb_dict = {
     "spill": {"past": "spilt/spilled", "participle": "spilt/spilled"},
     "spin": {"past": "spun", "participle": "spun"},
     "spit": {"past": "spat", "participle": "spat"},
-    "splead": {"past": "spled", "participle": "spled"},
     "spread": {"past": "spread", "participle": "spread"},
     "spring": {"past": "sprang", "participle": "sprung"},
     "stand": {"past": "stood", "participle": "stood"},
@@ -119,9 +118,27 @@ verb_dict = {
     "wake": {"past": "woke", "participle": "woken"},
     "wear": {"past": "wore", "participle": "worn"},
     "win": {"past": "won", "participle": "won"},
-    "write": {"past": "wrote", "participle": "written"}
+    "write": {"past": "wrote", "participle": "written"},
+    "behold": {"past": "beheld", "participle": "beheld"},
+    "bind": {"past": "bound", "participle": "bound"},
+    "breed": {"past": "bred", "participle": "bred"},
+    "cling": {"past": "clung", "participle": "clung"},
+    "deal": {"past": "dealt", "participle": "dealt"},
+    "dwell": {"past": "dwelt/dwelled", "participle": "dwelt/dwelled"},
+    "fit": {"past": "fit/fitted", "participle": "fit/fitted"},
+    "flee": {"past": "fled", "participle": "fled"},
+    "grind": {"past": "ground", "participle": "ground"},
+    "leap": {"past": "leapt/leaped", "participle": "leapt/leaped"},
+    "plead": {"past": "pled/pleaded", "participle": "pled/pleaded"},
+    "prove": {"past": "proved", "participle": "proven/proved"},
+    "smell": {"past": "smelt/smelled", "participle": "smelt/smelled"},
+    "spell": {"past": "spelt/spelled", "participle": "spelt/spelled"},
+    "spoil": {"past": "spoilt/spoiled", "participle": "spoilt/spoiled"},
+    "strive": {"past": "strove", "participle": "striven"},
+    "thrust": {"past": "thrust", "participle": "thrust"},
+    "weep": {"past": "wept", "participle": "wept"},
+    "wind": {"past": "wound", "participle": "wound"}
 }
-
 # Function to set a background image from a URL
 def add_bg_from_url(image_url):
     st.markdown(
