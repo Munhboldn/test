@@ -139,6 +139,7 @@ verb_dict = {
     "weep": {"past": "wept", "participle": "wept"},
     "wind": {"past": "wound", "participle": "wound"}
 }
+
 # Function to set a background image from a URL
 def add_bg_from_url(image_url):
     st.markdown(
@@ -156,7 +157,7 @@ def add_bg_from_url(image_url):
     )
 
 # URL of the image
-image_url = "https://github.com/Munhboldn/test/blob/main/dark%20academia.jpg?raw=true"  # Use ?raw=true for raw image
+image_url = "https://github.com/Munhboldn/test/blob/main/dark%20academia.jpg?raw=true"  
 
 # Set the background using the URL
 add_bg_from_url(image_url)
@@ -168,7 +169,7 @@ def find_verb_forms(verb):
     matches = process.extractOne(verb, list(verb_dict.keys()))
     if matches:
         best_match, score = matches
-        if score > 80:  # Adjust the threshold if needed
+        if score > 80:  
             return verb_dict[best_match]
     return None
 
